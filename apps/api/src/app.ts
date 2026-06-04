@@ -1,4 +1,5 @@
 import express from "express";
+import { errorMiddleware } from "./middlewares/error.middleware.js";
 import { notFoundMiddleware } from "./middlewares/not-found.middleware.js";
 import healthRoute from "./routes/health.route.js";
 
@@ -12,5 +13,6 @@ app.get("/", (_req, res) => {
 
 app.use("/api/health", healthRoute);
 app.use(notFoundMiddleware);
+app.use(errorMiddleware);
 
 export default app;
