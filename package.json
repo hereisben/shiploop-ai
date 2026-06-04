@@ -1,0 +1,14 @@
+{
+  "name": "shiploop-ai",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w @shiploop/api",
+    "build:api": "npm run build -w @shiploop/api",
+    "typecheck:api": "npm run typecheck -w @shiploop/api"
+  }
+}
