@@ -10,5 +10,11 @@
     "dev:api": "npm run dev -w @shiploop/api",
     "build:api": "npm run build -w @shiploop/api",
     "typecheck:api": "npm run typecheck -w @shiploop/api"
+  },
+  "devDependencies": {
+    "prisma": "^7.8.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^7.8.0"
   }
 }

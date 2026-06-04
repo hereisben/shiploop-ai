@@ -2,7 +2,7 @@ import { Router } from "express";
 
 const router = Router();
 
-router.get("/", (req, res) => {
+router.get("/", (_req, res) => {
   res.status(200).json({ status: `ok`, message: `ShipLoop AI API is running` });
 });
 

@@ -136,3 +136,5 @@ dist
 .pnp.*
 
 PROGRESS.md
+
+/generated/prisma
